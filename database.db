@@ -1,0 +1,7 @@
+import cx_Oracle
+conn=cx_Oracle.connect("hr/hr@localhost/pdborcl")
+cur=conn.cursor()
+
+print('Connected to Database')
+cur.close()
+conn.close()    
